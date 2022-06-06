@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../img/Fcircule.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="logo" href="../index.html">Facundo Taborda</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" navbb navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="personal.html">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="empresas.html">Empresas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="cliente.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cliente
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="cliente.html#fpago">Formas de Pago</a></li>
+                                <li><a class="dropdown-item" href="cliente.html#qsiniestro">Siniestro</a></li>
+                                <li><a class="dropdown-item" href="cliente.html#suger">Sugerencias</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="cliente.html#curriculum">Formá parte</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="Tel:3518080587" class="btn btn-lg btn-primary" id="botonllamada">3518080587</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div>
+            <div class="slideprincipal" 
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),url(../img/3.png); ;">
+                <div>
+                    <h1 class="fs-1">CONTACTO</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid row">
+            <div class="col-md-6 col-lg-6 my-4 d-flex-column justify-content-center">
+                <h3 class="titulos22 fs-2">Ubicacion</h3>
+                <p class="fs-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ipsum aliquid explicabo eveniet</p>
+                <h3 class="titulos22 fs-2">Datos de Contacto</h3>
+                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat!</p>
+            </div>
+            <div class="col-md-6 col-lg-6 my-4">
+                <form action="">
+                    <div class="primeros">
+                        <input class="form-control my-2" type="text" name="name" id="name" placeholder="Nombre">
+                        <input class="form-control my-2" type="text" name="lastname" id="lastname" placeholder="Apellido">
+                        <input class="form-control my-2" type="number" name="number" id="number" placeholder="Numero de telefono">
+                        <input class="form-control my-2" type="email" name="email" id="email" placeholder="email"><br>
+                        <div class="cliente">
+                            <label class="form-label" for="asegurado">¿Eres cliente?</label>
+                            <input class="form-check-input" type="radio" id="Asegurado" name="Asegurado">
+                            <label for="">Si</label>
+                            <input class="form-check-input"  type="radio" id="Asegurado" name="Asegurado">
+                            <label for="">No</label>
+                        </div>
+                    </div>
+                    <div class="segundos">
+                        <textarea class="form-control" name="consulta" id="consulta" cols="30" rows="5"
+                            placeholder="Consulta.."></textarea><br>
+                        <label class="form-label" for="medio">Medio de contacto</label>
+                        <select class="form-select" name="medio" id="medio">
+                            <option value="number">Teléfono</option>
+                            <option value="email">Mail</option>
+                            <option value="Whatsapp">Whatsapp</option>
+                        </select>
+                        <input class="btn btn-primary botonnormalindex mt-2" type="submit" value="Enviar" class="cajaservicios__btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-fluid d-flex-column justify-content-center align-items-center text-center mx-auto ">
+            <h3 class="fs-1 titulos22 my-3">Oficina</h3>
+            <div class="contenedormapa">
+                <iframe class="w-100 p-4"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13618.287479926636!2d-64.189343512055!3d-31.425919803870155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a291a6c877c7%3A0x8e01213c2a4ec7f8!2zUGFyYW7DoSA2NTcsIFg1MDAwIEhYTSwgQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1650993230971!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">Oficina</iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+        <div class="footer2">
+            <div id="iconos">
+                <a href="https://instagram.com/facutabordaa"><i class="bi bi-instagram" style="color: #f5f5f5;"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100002061856217"><i class="bi bi-facebook" style="color: #f5f5f5;"></i></a>
+                <a href="https://twitter.com/Facundo89262996"><i class="bi bi-twitter"style="color: #f5f5f5;"></i></a>
+            </div>
+            <p class="fs-5 p-2 my-auto">&copy; TabordaFacundo 2022</p>
+            <div class="fs-2">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./personal.html">Personal</a></li>
+                    <li><a href="./empresas.html">Empresas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./cliente.html">Cliente</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
