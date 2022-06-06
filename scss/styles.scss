@@ -10,3 +10,96 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
+
+header {
+    grid-area: header;
+    background-color: #f8f7ff;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        padding-bottom: 10px;
+
+        .logo {
+            font-weight: bold;
+            color: #3E92CC;
+            font-size: 1.6em;
+            padding: 5px;
+            margin: 10px;
+            text-decoration: none;
+
+            &:hover {
+                color: #C44536;
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 10px;
+
+            li {
+                padding: 4px;
+
+                a {
+                    text-decoration: none;
+                    padding: 5px;
+                    color: black;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: #C44536;
+                    }
+                }
+            }
+        }
+
+        #boton1 {
+            border: 1px solid #C44536;
+            border-radius: 5px;
+            background: rgb(255, 255, 255);
+            color: #C44536;
+            font-style: italic;
+            padding: 8px;
+            padding-right: 14px;
+            padding-left: 12px;
+            text-decoration: none;
+            margin: 10px;
+
+            &:hover {
+                background-color: #C44536;
+                color: white;
+                border: 1px solid #C44536;
+            }
+        }
+    }
+}
+
+main {
+    grid-area: menu;
+    background-color: #f8f7ff;
+
+    .slideprincipal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 30vh;
+        max-height: 40vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/3.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h1 {
+            font-size: 2.5em;
+            padding: 4px;
+        }
+    }
+}
