@@ -11,6 +11,7 @@ body {
 
 header {
   grid-area: header;
+  height: auto;
   background-color: #f8f7ff; }
   header nav {
     display: flex;
@@ -19,13 +20,13 @@ header {
     align-items: center;
     text-align: center;
     height: 100%;
-    padding-bottom: 10px; }
+    padding: 10px; }
     header nav .logo {
       font-weight: bold;
       color: #3E92CC;
       font-size: 1.6em;
       padding: 5px;
-      margin: 10px;
+      margin: 10px 0px;
       text-decoration: none; }
       header nav .logo:hover {
         color: #C44536; }
@@ -50,8 +51,7 @@ header {
       padding: 8px;
       padding-right: 14px;
       padding-left: 12px;
-      text-decoration: none;
-      margin: 10px; }
+      text-decoration: none; }
       header nav #boton1:hover {
         background-color: #C44536;
         color: white;
@@ -59,15 +59,31 @@ header {
 
 main {
   grid-area: menu;
-  background-color: #f8f7ff; }
+  background-color: #f8f7ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto; }
+  main img {
+    width: 90vw; }
+  main h2, main h3 {
+    color: #C44536;
+    font-size: 1.5em;
+    padding: 2px;
+    margin: 5px 0; }
+  main p {
+    font-size: 1em;
+    padding: 2px 0; }
   main .slideprincipal {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
-    width: 100%;
+    width: 100vw;
     height: 30vh;
     max-height: 40vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/3.png);
@@ -77,3 +93,9 @@ main {
     main .slideprincipal h1 {
       font-size: 2.5em;
       padding: 4px; }
+    main .slideprincipal h2 {
+      color: white;
+      font-size: 1.3em; }
+  main .slideSecundario div {
+    padding: 4px;
+    margin-top: 4px; }

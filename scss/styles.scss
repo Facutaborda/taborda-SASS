@@ -1,3 +1,13 @@
+@import 'variables';
+
+@mixin columnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,27 +23,24 @@ body {
 
 header {
     grid-area: header;
-    background-color: #f8f7ff;
+    height: auto;
+    background-color: $color-primero;
 
     nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        @include columnCenter();
         height: 100%;
-        padding-bottom: 10px;
+        padding: 10px;
 
         .logo {
             font-weight: bold;
-            color: #3E92CC;
+            color: $color-segundo;
             font-size: 1.6em;
             padding: 5px;
-            margin: 10px;
+            margin: 10px 0px;
             text-decoration: none;
 
             &:hover {
-                color: #C44536;
+                color: $color-tercero;
             }
         }
 
@@ -51,28 +58,27 @@ header {
                     font-weight: bold;
 
                     &:hover {
-                        color: #C44536;
+                        color: $color-tercero;
                     }
                 }
             }
         }
 
         #boton1 {
-            border: 1px solid #C44536;
+            border: 1px solid $color-tercero;
             border-radius: 5px;
             background: rgb(255, 255, 255);
-            color: #C44536;
+            color: $color-tercero;
             font-style: italic;
             padding: 8px;
             padding-right: 14px;
             padding-left: 12px;
             text-decoration: none;
-            margin: 10px;
 
             &:hover {
-                background-color: #C44536;
+                background-color: $color-tercero;
                 color: white;
-                border: 1px solid #C44536;
+                border: 1px solid $color-tercero;
             }
         }
     }
@@ -80,26 +86,53 @@ header {
 
 main {
     grid-area: menu;
-    background-color: #f8f7ff;
+    background-color: $color-primero;
+    @include columnCenter();
+    height: auto;
+
+    img {
+        width: 90vw;
+    }
+    h2, h3 {
+        color: $color-tercero;
+        font-size: 1.5em;
+        padding: 2px;
+        margin: 5px 0;
+    }
+    p{
+        font-size: 1em;
+        padding: 2px 0;
+    }
 
     .slideprincipal {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        @include columnCenter();
         color: white;
-        width: 100%;
+        width: 100vw;
         height: 30vh;
         max-height: 40vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/3.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+        background: {
+            image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/3.png);
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
 
         h1 {
             font-size: 2.5em;
             padding: 4px;
         }
+        h2{color: white;font-size: 1.3em;}
+    }
+
+
+    .slideSecundario {
+        div {
+            padding: 4px;
+            margin-top: 4px;
+
+
+        }
+
     }
 }
