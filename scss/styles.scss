@@ -187,42 +187,115 @@ main {
         &:hover {
             border-color: $color-tercero;
             box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-        
+
         }
-        div{
+
+        div {
             margin: 20px;
         }
+
         img {
             border-radius: 20px;
             padding: 8px;
         }
-        h3{color: $color-segundo;font-size: 2.3em;}
-        p{margin: 15px}
-        a{@include btnclassic();}
+
+        h3 {
+            color: $color-segundo;
+            font-size: 2.3em;
+        }
+
+        p {
+            margin: 15px
+        }
+
+        a {
+            @include btnclassic();
+        }
 
     }
 
 }
-footer{
+
+footer {
     grid-area: footer;
     background-color: $color-segundo;
     @include columnCenter();
     transition: 0.5s;
-    &:hover{background-color: lightblue;}
-    
-    a{
+
+    &:hover {
+        background-color: lightblue;
+    }
+
+    a {
         text-decoration: none;
         color: white;
         font-weight: bold;
         font-size: 1.2em;
         padding: 4px;
-        
-        &:hover{
-            color:$color-tercero}
-    }
-    p, div{margin: 10px;}
-    ul{list-style: none;}
-    li{padding: 6px;}
-    
 
+        &:hover {
+            color: $color-tercero
+        }
+    }
+
+    p,
+    div {
+        margin: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        padding: 6px;
+    }
+
+
+}
+
+.contact {
+    div {
+        @include columnCenter();
+
+        input {
+            padding: 6px 0px;
+            margin: 6px 0px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 8px 20px;
+
+            label {
+                padding: 0px 6px;
+            }
+        }
+
+        label {
+            font-size: 1.2em;
+        }
+
+        select {
+            margin: 10px 0px;
+        }
+
+        .btn {
+            @include btnclassic()
+        }
+    }
+}
+
+.map {
+    margin: 25px 0px;
+    width: 100vw;
+    iframe{
+        width: 100%;
+        height: 30%;
+        padding: 10px;
+        border-radius: 20px;
+    }
 }
