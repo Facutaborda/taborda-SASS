@@ -1,0 +1,26 @@
+@mixin position ($display, $flex-direction, $justify-content, $align-items, $text-align) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    text-align: $text-align;
+}
+
+@mixin btnclassic {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid map-get($colors, tercero);
+    color: white;
+    background-color: map-get($colors, tercero);
+    transition: 0.3s ease-out;
+    box-shadow: 2px 2px 10px rgba(51, 47, 47, 0.774);
+
+    &:hover {
+        color: map-get($colors, tercero);
+        background-color: white;
+        border: 1px solid white;
+    }
+}
